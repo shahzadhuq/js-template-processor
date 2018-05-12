@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Example: Template Processor</title>
+  <link rel="stylesheet" href="./assets/styles/site.css">
+  <script src="./scripts/template-processor.js"></script>
+  <script src="./scripts/site.js"></script>
+</head>
+<body>
+  <header>
+    <section class="container">
+      <div class="pull-left"><a href="http://www.shahzadhuq.com" target="_blank">Shahzad Huq</a></div>
+      <div class="pull-right"><a href="https://github.com/shahzadhuq" target="_blank">GitHub</a></div>
+    </section>
+  </header>
+  <section class="container">
+    <h1>Demo - Template Processor</h1>
+    <p>Below is the final HTML output produced by this library.</p>
+    <div id="final-html-anchor">
+      <!-- Final HTML injected here-->
+    </div>
+    <div id="error" class="error hide">
+      <!--Any errors injected here-->
+    </div>
+  </section>
+
+  <!-- your template -->
+  <script id="my-template" type="text/template">
+    <div class="profile-card">
+        <img class="user-picture" src="./assets/images/{{PictureName}}.png">
+        <hr/>
+        <h3>{{UserName}}</h3>
+        <ul class="social-links">
+          <li class="link"><a href="#"><img src="./assets/images/twitter.svg" alt="Twitter"></a></li>
+          <li class="link"><a href="#"><img src="./assets/images/facebook.svg" alt="Facebook"></a></li>
+          <li class="link"><a href="#"><img src="./assets/images/linkedin.svg" alt="LinkedIn"></a></li>
+        </ul>
+    </div>
+  </script>
+
+</body>
+</html>

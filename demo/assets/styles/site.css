@@ -1,0 +1,98 @@
+/* Resets */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Site CSS */
+header {
+  height: 65px;
+  background-color: #3177CC;
+  line-height: 65px;
+  color: #fff;
+  font-size: 1.25rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.3)
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+  text-align: center;
+}
+.profile-card {
+  background-color: #d3d3d31c;
+  min-height: 350px;
+  margin-top: 50px;
+  padding: 10px;
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2);
+}
+.user-picture {
+  border-radius: 50%;
+  border: 2px solid white;
+  width: 200px;
+}
+hr {
+  border-color: #628fb657;
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.error {
+  font-size: 1.25rem;
+  color: maroon;
+}
+.error::before {
+  content: "Sorry, an error occurred: ";
+}
+
+.hide {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+ul.social-links {
+  list-style: none;
+  margin-top: 80px;
+}
+ul.social-links li.link {
+  display: inline-block;
+  width: 80px;
+}
+
+li.link img {
+  max-width: 35px;
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+img:hover {
+  animation: bounce 1s;
+}
